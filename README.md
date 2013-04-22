@@ -1,8 +1,7 @@
 # Thunderbird List Unsubscription Add-On#
-
 ###Provided by Inxmail GmbH###
 
-##About Thunderbird List Unsubscription Add-On##
+##About the Add-On##
 Unsubscribe links are currently positioned at very different places within the newsletters. You no longer have to spend time searching for these links; instead, use the quick and easy unsubscribe function for Thunderbird, an add-on developed by Inxmail. You can now cancel your newsletter subscriptions in the user interface directly, as long as the newsletter mailer supports this function. <br />
 <br />
 The add-on developed by the email marketing provider is based on the “List-Unsubscribe” email header that is already being implemented by Google Mail and Windows Live Hotmail to offer this kind of user-friendly unsubscribe procedure to their customers. <br />
@@ -14,9 +13,9 @@ In addition to supporting this centralised unsubscribe procedure in the webmail 
 <br />
 As requirement for this add-on the newsletter mailer must be support this function by adding the following header to their mail: List-Unsubscribe: <mailto:address@yourdomain.com?subject=xxxx>.<br />
 
-##Contributing to the Thunderbird List Unsubscription Add-On#
+##Contributing to the Add-On#
 
-If you want to contribute to the Add-On send us a [pull requests](http://help.github.com/send-pull-requests/).
+If you want to contribute to the Add-On send us [pull requests](http://help.github.com/send-pull-requests/).
 
 ##Contact##
 
