@@ -1,0 +1,9 @@
+content  inxlistunsubscribe  jar:chrome/chrome.jar!/content/
+
+skin  inxlistunsubscribe  classic/1.0  jar:chrome/chrome.jar!/skin/classic/
+
+locale  inxlistunsubscribe  de-DE  jar:chrome/chrome.jar!/locale/de-DE/
+locale  inxlistunsubscribe  en-US  jar:chrome/chrome.jar!/locale/en-US/
+locale  inxlistunsubscribe  fr-FR  jar:chrome/chrome.jar!/locale/fr-FR/
+
+overlay  chrome://messenger/content/mailWindowOverlay.xul  chrome://inxlistunsubscribe/content/inxlistunsubscribe.xul

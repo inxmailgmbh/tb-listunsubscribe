@@ -1,0 +1,17 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#listunsubscribe-hello
+{
+  color: red ! important;
+}
+#unsubscribe-button {
+    list-style-image: url("chrome://inxlistunsubscribe/skin/unsubscribe.gif");
+    color:red;
+}
+
+#unsubscribe_image {
+   list-style-image: url(chrome://inxlistunsubscribe/skin/unsubscribe_bar.gif);
+}
+toolbar[iconsize="small"] #unsubscribe-button {
+  list-style-image: url("chrome://inxlistunsubscribe/skin/small_unsubscribe.gif");
+}

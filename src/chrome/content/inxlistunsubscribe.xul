@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?xml-stylesheet href="chrome://inxlistunsubscribe/skin/inxlistunsubscribe.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://inxlistunsubscribe/locale/inxlistunsubscribe.dtd">
+
+<overlay id="inxlistunsubscribe" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+   <script type="application/x-javascript" src="chrome://inxlistunsubscribe/content/inxlistunsubscribe.js"/>
+    
+	<stringbundleset id="stringbundleset">
+        <stringbundle id="inxlistunsubscribe-strings" src="chrome://inxlistunsubscribe/locale/inxlistunsubscribe.properties"/>
+    </stringbundleset>
+
+	<toolbarpalette id="header-view-toolbar-palette">
+		<toolbarbutton id="inxlistunsubscribeButton"
+			label="&listunsubscribe.label;"
+			class="toolbarbutton-1 msgHeaderView-button"
+			image="chrome://inxlistunsubscribe/skin/logo_bw.png"
+			oncommand="Unsubscriber.unsubscribe()"/>
+	</toolbarpalette>
+	<toolbar id="header-view-toolbar"
+                     defaultset="hdrReplyButton,hdrReplyAllButton,hdrReplyListButton,hdrForwardButton,inxlistunsubscribeButton,hdrArchiveButton,hdrJunkButton,hdrTrashButton">
+	</toolbar>
+	   
+
+</overlay>

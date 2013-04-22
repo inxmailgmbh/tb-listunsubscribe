@@ -1,0 +1,32 @@
+<project name="Thunderbird Add-On Buildscript" default="build">
+	
+	<target name="cleanup">
+		<delete includeEmptyDirs="true" dir="output"/>
+		<delete includeEmptyDirs="true" dir="tmp"/>
+	</target>
+	
+	<target name="jar" >
+		<mkdir dir="output" />
+		<mkdir dir="output/chrome" />
+		<mkdir dir="tmp" />
+		<mkdir dir="tmp/chrome" />
+		<copy todir="tmp">
+			<fileset dir="src/chrome/" />
+		</copy>
+		<jar basedir="tmp" destfile="output/chrome/chrome.jar" />
+	</target>
+
+	<target name="files" >
+		<copy todir="output">
+			<fileset dir="src/">
+				<exclude name="**/chrome/**"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="zip" >
+		<zip basedir="output" destfile="Unsubscribe from Mailing List_unsigniert.xpi" />
+	</target>
+	<target name="build" depends="cleanup,jar,files,zip"/>
+
+</project>
